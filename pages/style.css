@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Tangerine:wght@400;700&display=swap');
+:root{
+    --main-font: "Tangerine", cursive;
+}
+@media only screen and (max-width: 800px){
+    header{
+        height: 150px;
+    }
+    #title{
+        font-size: 50px;
+    }
+    section.module.content{
+        padding: 20px 10px;
+        
+    }
+    pre{
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    .parallax-pre {
+        width: 250px;
+        margin-left: 10px;
+        padding: 10px;
+        
+    }
+    #footer-text{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 801px){
+    header{
+        height: 100px;
+    }
+    #title{
+        font-size: 60px;
+    }
+    section.module.content{
+        padding: 50px 10px;
+        
+    }
+    pre{
+        font-size: 50px;
+        margin-left: -70px;
+    }
+    .parallax-pre {
+        width: 390px;
+        margin-left: 20px;
+        padding: 15px;
+        
+    }
+    #footer-text{
+        font-size: 18px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#title{
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: 900;
+}
+#header-text{
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.link:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 6px;
+}
+section.module.content{
+    background-color: #dfdfdf;
+    
+}
+pre{
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+.parallax-pre {
+    display: flex;
+    background-color: rgba(59, 55, 55, 0.377);
+    color: #fff;
+    border-radius: 30px;
+    
+}
+section.module.parallax{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, #f6f6f61c, #b1b1b127, #0a0a0ab9);
+}
+section.module.parallax-1{
+    background-image: url("../components/images/background-2.webp");
+}
+section.module.parallax-2{
+    background-image: url("../components/images/background-2.webp");
+}
+footer{
+    padding: 10px;
+    background-color: #000;
+}
+#footer-text{
+    color: #fff;
+    text-align: center;
+}
